@@ -1,3 +1,11 @@
 virtual scroll list on javascript
 
-https://nasreddineskandrani.github.io/virtual-scroll/
+### Dev
+```bash
+1. yarn install
+2. yarn start
+```
+
+### Prod
+ todo
+
