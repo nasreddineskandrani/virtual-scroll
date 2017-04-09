@@ -1,0 +1,13 @@
+{
+    "files": [
+        "./src/virtual-scroll.ts"
+    ],
+    "compilerOptions": {
+        "sourceMap": true,
+        "module": "commonjs",
+        "noImplicitAny": true,
+        "target": "es5",
+        "declaration": false,
+        "outDir": "assets"
+    }
+}
