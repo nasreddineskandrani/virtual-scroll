@@ -1,4 +1,4 @@
-virtual scroll list on javascript
+virtual scroll - javascript
 
 ### Dev
 ```bash
@@ -8,4 +8,3 @@ virtual scroll list on javascript
 
 ### Prod
  todo
-

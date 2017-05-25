@@ -4,4 +4,11 @@ html {
         display: block;
         background-color: #ddd;
     }
+
+    .container {
+        border: 1px solid black;
+        height: 500px;
+        overflow-y: visible;
+        overflow-x: hidden;
+    }
 }

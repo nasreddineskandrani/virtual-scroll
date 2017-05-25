@@ -1,6 +1,6 @@
-import { VirtualScroll, VirtualScrollOptions } from '../src/virtual-scroll';
+import { VirtualScroll } from '../src/virtual-scroll';
 function getData() {
-	const NB_ITEMS = 1000000;
+	const NB_ITEMS = 50000; // let 50k for now - IE limitation
 	const _data = [];
 	const nbItems = NB_ITEMS;
 	for (let i = 0; i < nbItems; ++i) {
@@ -9,8 +9,7 @@ function getData() {
 	return _data;
 }
 
-console.log(document.getElementById('virtual-scroll'));
-
+/*
 var options = <VirtualScrollOptions>{
 	ID: 'virtual-scroll',
 	data: getData(),
@@ -23,6 +22,7 @@ var options = <VirtualScrollOptions>{
 		span>{{others}}</span>`
 	}
 };
+*/
 
 /**
  * by defaut 400000 to test 
@@ -34,4 +34,8 @@ var options = <VirtualScrollOptions>{
  */
 
 // initialization
-const virtualScroll = new VirtualScroll(options);
+let options = {
+	'id': 'virtual-scroll'
+};
+let virtualScroll = VirtualScroll();
+virtualScroll.init(getData(), options);
